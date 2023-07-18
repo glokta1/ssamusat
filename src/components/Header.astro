@@ -1,0 +1,47 @@
+---
+import logo from "../assets/logo.jpeg";
+---
+
+<div class="container">
+  <div class="left">
+    <img src={logo} alt="" class="logo" />
+    <h1>SSAMUSAT</h1>
+  </div>
+  <nav class="nav-links">
+    <a href="#">About</a>
+    <a href="#">Features</a>
+    <a href="#">Timeline</a>
+    <a href="#">Sponsors</a>
+    <a href="#">Team</a>
+  </nav>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+
+  h1 {
+    margin-left: 5px;
+  }
+
+  .left {
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    display: inline;
+    max-width: 10%;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+</style>
