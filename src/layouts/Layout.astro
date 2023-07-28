@@ -5,7 +5,7 @@ export interface Props {
 
 const { title } = Astro.props;
 import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Header1 from "../components/Header1.astro";
 ---
 
 <!DOCTYPE html>
@@ -18,21 +18,22 @@ import Header from "../components/Header.astro";
     <title>{title}</title>
   </head>
   <body>
-    <Header />
+    <Header1 />
     <slot />
-    <Footer />
+    <!-- <Footer /> -->
   </body>
 </html>
 
 <style is:global>
-  html,
   body {
-    display: flex;
-    flex-direction: column;
-    /* font-size: 1.125rem; */
+    font-size: 1.125rem;
+  }
+  .wrapper {
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   section {
-    height: 100vh;
+    /* height: 50vh; */
   }
 </style>

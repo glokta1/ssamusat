@@ -19,4 +19,3 @@ const firebaseConfig = {
 
 // Initialize Firebase and Firestore
 export const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app)
